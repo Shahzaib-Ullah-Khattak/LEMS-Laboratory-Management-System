@@ -44,7 +44,7 @@ public class Main {
             }
         }
     }
-
+// i use this dummy methord for the searching and of equipment make this in admin (safdar`s part ) so that these equipment are entered by the admin.
     static int readInteger() {
         while (!input.hasNextInt()) {
             System.out.print("Enter a valid number: ");
