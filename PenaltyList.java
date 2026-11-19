@@ -23,6 +23,28 @@ class PenaltyList {
         tail = newNode;
     }
 
+
+
+
+
+    double getTotalPenalty() {
+        return calculateTotal(head);
+    }
+
+
+
+    private double calculateTotal(PenaltyNode current) {
+
+        if (current == null) {
+            return 0;
+        }
+
+        return current.amount + calculateTotal(current.next);
+    }
+
+
+
+
     void display() {
 
         System.out.println("\n===== STUDENT PENALTIES =====");
@@ -51,12 +73,5 @@ class PenaltyList {
         displayRecursive(current.next);
     }
 
-    double calculateTotal(PenaltyNode current) {
-
-        if (current == null) {
-            return 0;
-        }
-
-        return current.amount + calculateTotal(current.next);
-    }
+   
 }
