@@ -380,9 +380,7 @@ class Student {
     System.out.println("Name: " + name);
     System.out.println("Email: " + email);
 
-    System.out.println("\n===== STUDENT PENALTY DETAILS =====");
-
-    penalties.display();
+    System.out.println("Total Penalty Amount: Rs. " + penalties.getTotalPenalty());
 }
 
 }
