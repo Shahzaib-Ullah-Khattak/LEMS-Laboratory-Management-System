@@ -372,11 +372,18 @@ class Student {
         this.penalties = new PenaltyList();
     }
 
-    void displayProfile() {
+  
+void displayProfile() {
 
-        System.out.println("\n===== STUDENT PROFILE =====");
-        System.out.println("Student ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Email: " + email);
-    }
+    System.out.println("\n===== STUDENT PROFILE =====");
+
+    System.out.println("Student ID: " + id);
+    System.out.println("Name: " + name);
+    System.out.println("Email: " + email);
+
+    System.out.println("\n===== STUDENT PENALTY DETAILS =====");
+
+    penalties.display();
+}
+
 }
